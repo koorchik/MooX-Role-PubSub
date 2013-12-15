@@ -20,6 +20,13 @@ WriteMakefile(
     PREREQ_PM => {
         'Moo' => '0',
     },
+    META_MERGE       => {
+        resources => {
+            repository => 'https://github.com/koorchik/MooX-Role-PubSub',
+            license    => 'http://www.opensource.org/licenses/artistic-license-2.0',
+            bugtracker => 'https://github.com/koorchik/MooX-Role-PubSub/issues'
+        },
+    },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'MooX-Role-PubSub-*' },
 );
